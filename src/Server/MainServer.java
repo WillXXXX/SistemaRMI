@@ -15,7 +15,7 @@ import java.rmi.registry.Registry;
  *
  * @author paulin
  */
-public class Main {
+public class MainServer {
     
     
     public static void main(String[] args) throws RemoteException, MalformedURLException, AlreadyBoundException{

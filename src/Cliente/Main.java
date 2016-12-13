@@ -11,6 +11,7 @@ import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.Scanner;
+import View.Principal;
 
 /**
  *
@@ -38,11 +39,13 @@ public class Main {
         int account, account1, account2;
         double value;
         String op = "1";
+        Principal janPrincipal = new Principal();
+        
         while(!op.equals("0")){
             displayMenu();
             op = sc.next();
             switch(op){
-                case "1":
+                case "1":                      
                     System.out.println("Create account");
                     System.out.println("Report name:");
                     name = sc.next();
@@ -55,7 +58,7 @@ public class Main {
                     break;
                 case "2":
                     System.out.println("Remove account");
-                    System.out.println("Report name ");
+                    System.out.println("Report account ");
                     account = sc.nextInt();
                     if( manager.removeAccount(account)){
                         System.out.println("Account remove success");
@@ -80,7 +83,7 @@ public class Main {
                     System.out.println("value sake: ");
                     value = sc.nextInt();
                     if(manager.withdraw(account, value))
-                        System.out.println("Deposit success");
+                        System.out.println("Sake success");
                     else
                         System.out.println("not already exists balance for withdraw in account" + ", try again");
                     break;
