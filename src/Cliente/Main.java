@@ -30,7 +30,8 @@ public class Main {
     }
     
     public static void main(String[] args) throws RemoteException, NotBoundException{
-        Registry registry = LocateRegistry.getRegistry(1234);
+       // System.setProperty("java.rmi.server.hostname", "127.0.0.1");
+        Registry registry = LocateRegistry.getRegistry(1100);
         MessengerInterface manager = (MessengerInterface) registry.lookup("manager");
         Scanner sc = new Scanner(System.in);
         String name;

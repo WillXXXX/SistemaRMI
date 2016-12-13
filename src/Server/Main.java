@@ -20,7 +20,8 @@ public class Main {
     
     public static void main(String[] args) throws RemoteException, MalformedURLException, AlreadyBoundException{
         //Cria o cara que disponibiliza objetos informando a porta
-        Registry registry = LocateRegistry.createRegistry(1234);
+        //System.setProperty("java.rmi.server.hostname", "192.168.1.2");
+        Registry registry = LocateRegistry.createRegistry(1100);
         //Disponibiliza o objeto remoto
         registry.bind("manager", Manager.getInstance());
     }
