@@ -85,7 +85,7 @@ public class Principal extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Carlito", 3, 48)); // NOI18N
-        jLabel1.setText("Banco Rolinha");
+        jLabel1.setText("Banco RMI");
         jLabel1.setToolTipText("");
 
         btnSair.setText("Sair");

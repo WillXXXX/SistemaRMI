@@ -126,7 +126,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Carlito" size="48" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Banco Rolinha"/>
+        <Property name="text" type="java.lang.String" value="Banco RMI"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
     </Component>
