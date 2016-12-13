@@ -60,12 +60,12 @@ public final class Manager extends UnicastRemoteObject implements MessengerInter
     public boolean tranfer(int account1, int account2, double value) throws RemoteException {
       for(Account a : accounts){
             if(a.getAccount() == account1){
-                //if(a.getBalance() > value){
+                if(a.getBalance() > value){
                     for(Account a2 : accounts){
                         if(a2.getAccount() == account2)
                             return a.tranfer(value, a2);
                     }
-                //}
+                }
             }    
        }
         return false;
